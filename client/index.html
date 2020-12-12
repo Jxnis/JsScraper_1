@@ -7,8 +7,21 @@
 </head>
 <body>
     <h1>TBA</h1>
+
+    <h4>Add a new ...</h4>
+    <input class="channel-input" type="text" placeholder="paste url" />
+    <button type="submit" onclick="submitChannel()">submit</button>
+
+    <div class="container"></div>
+
     <script>
-        newEl = (type, attrs={}) => {
+
+        function submitChannel() {
+            const channelValue = document.querySelector('.channel-input').value;
+        }
+
+
+        function newEl (type, attrs={}) {
             const el = document.createElement(type);
             for (let attr in attrs) {
                 const value = attrs[attr];
